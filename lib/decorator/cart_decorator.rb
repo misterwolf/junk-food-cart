@@ -1,7 +1,12 @@
+require 'delegate'
 require_relative '../utils'
+require_relative '../string_utils'
+require_relative '../bigdecimal_utils'
 
-class CartDecorator
+class CartDecorator < SimpleDelegator
   include Utils
+  using StringUtils
+  using BigDecimalUtils
 
   CHECK_TAX_EVALUATION = true # Not used atm. We can skip the "IVA discount" by disabling it. Better set similar constant in the DB.
   FREE_TAX_THRESHOLD = 30
@@ -38,7 +43,7 @@ class CartDecorator
   def evaluate_total_costs
     total = total_cost_tax_free
 
-    return [total, 0, total] if total >= FREE_TAX_THRESHOLD
+    return [total, BigDecimal('0.0'), total] if total >= FREE_TAX_THRESHOLD
 
     [total, total_cost_tax, total_cost_full_price]
   end
@@ -76,27 +81,33 @@ class CartDecorator
 
   def print_products
     sort_cart_products.each_with_index.collect do |product_line, index|
-      cart_progressive = index + 1
-      how_much = product_line[1].size
-      p = product_line[1].first
-      unit_price = round(p.price)
-      no_tax = unit_price * how_much
-      tax_applied = round(p.tax_evaluation * how_much)
-      full_price = round(p.full_price * how_much)
+    cart_progressive = index + 1
+    how_much = product_line[1].size
+    p = product_line[1].first
+    unit_price = p.price
+    no_tax = unit_price * how_much
+    tax_applied = p.tax_evaluation * how_much
+    full_price = p.full_price * how_much
 
-      [cart_progressive, p.description, how_much, to_euro(unit_price), to_euro(no_tax), to_euro(tax_applied), to_euro(full_price)].join(' | ')
+    [cart_progressive,
+      p.description,
+      how_much,
+      unit_price.two_decimal.add_euro_sym,
+      no_tax.two_decimal.add_euro_sym,
+      tax_applied.two_decimal.add_euro_sym,
+      full_price.two_decimal.add_euro_sym
+    ].join(' | ')
     end.join("\n")
   end
 
   def recap
-
     tax_free, tax_cost, total_cost = evaluate_total_costs
 
     <<~HERE
     #{line}
-    Totale (senza iva): #{to_euro(tax_free)}
-    Iva applicata: #{to_euro(tax_cost)}
-    Totale (iva inclusa): #{to_euro(total_cost)}
+    Totale (senza iva): #{tax_free.two_decimal.add_euro_sym}
+    Iva applicata: #{tax_cost.two_decimal.add_euro_sym}
+    Totale (iva inclusa): #{total_cost.two_decimal.add_euro_sym}
     #{line}
     HERE
   end

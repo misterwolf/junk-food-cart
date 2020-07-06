@@ -1,9 +1,13 @@
 require_relative './lib/cart'
+require_relative './lib/string_utils'
+require_relative './lib/bigdecimal_utils'
 require_relative './lib/decorator/cart_decorator'
 require_relative './lib/product/beverage/coke'
 require_relative './lib/product/food/hamburger'
 require_relative './lib/product/food/sandwich'
 
+# Example::SomeCarts
+# used to define all the exercises required
 module Example
   class SomeCarts
     examples = [
