@@ -54,7 +54,7 @@ _Cestino 1_
 
 **4** CocaCola
 
-**3v Tramezzini
+**3** Tramezzini
 
 
 _Cestino 2_
