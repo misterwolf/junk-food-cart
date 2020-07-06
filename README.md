@@ -1,6 +1,6 @@
 # junk-food-cart
 
-### install gems
+### install gems
 
 `$ bundle install`
 
