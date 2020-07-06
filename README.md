@@ -1,15 +1,20 @@
 # junk-food-cart
-## install gems
-> bundle install
 
-## run examples here wrote
-> ruby example_carts.rb
+### install gems
 
-## run Specs
-> rspec spec/
+`$ bundle install`
+
+### run examples here wrote
+
+`$ ruby example_carts.rb`
+
+### run Specs
+
+`$ rspec spec/`
 
 
-## Excercise
+### Excercise
+
 = Inizio tema ======================================================================
 Ho un negozio dove vendo bibite e panini
 I panini hanno un'iva applicata del 10%
