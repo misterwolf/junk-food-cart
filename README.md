@@ -47,53 +47,48 @@ Prezzi:
 Per ogni cestino stampare :
 
 ————————————————————————————————————————————————————
+
 Cestino #numero
+
 ————————————————————————————————————————————————————
+
 #progressivo_nel_cestino | #descrizione_articolo | #quantita |  #prezzo_unitario | #prezzo_totale_iva_esclusa | #iva | #prezzo_iva_inclusa
 
 ————————————————————————————————————————————————————
+
 Totale (senza iva): #totale_senza_iva
 Iva applicata: #totale_iva
 Totale (iva inclusa): #totale_senza_iva
+
 ————————————————————————————————————————————————————
 
 ### Visual Examples
 
-====================================================
-
 _Cestino 1_
 
-**1** Hamburger
+- **1** Hamburger
 
-**4** CocaCola
+- **4** CocaCola
 
-**3** Tramezzini
-————————————————————————————————————————————————————
+- **3** Tramezzini
 
-====================================================
 
 _Cestino 2_
 
-**12** Hamburger
-————————————————————————————————————————————————————
+- **12** Hamburger
 
-
-====================================================
 
 _Cestino 3_
 
-**2** CocaCola
+- **2** CocaCola
 
-**1** Hamburger
-————————————————————————————————————————————————————
+- **1** Hamburger
 
-====================================================
 
 _Cestino 4_
 
-**1** Coca Cola
+- **1** Coca Cola
 
-**1** hamburger
-————————————————————————————————————————————————————
+- **1** hamburger
 
 = Fine tema ======================================================================
