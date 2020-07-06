@@ -1,5 +1,8 @@
 # junk-food-cart
 
+### download repository
+`$ git clone git@github.com:misterwolf/junk-food-cart.git`
+
 ### install gems
 
 `$ bundle install`
