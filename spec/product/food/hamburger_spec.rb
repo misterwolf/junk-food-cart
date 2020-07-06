@@ -7,8 +7,8 @@ describe Hamburger do
     @base = described_class.new
   end
 
-  it 'price is 10' do
-    expect(@base.price).to eq(10)
+  it 'price is 1000' do
+    expect(@base.price).to eq(1000)
   end
 
   it "descriptions is 'Panino - Hamburger'" do

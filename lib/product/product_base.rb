@@ -1,8 +1,10 @@
-require_relative '../utils/percent_of'
+require_relative '../utils'
 
 class ProductBase
+  include Utils
+
   def tax_evaluation
-    (price).percent_of(tax)
+    percent_of(price, tax)
   end
 
   def full_price

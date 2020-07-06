@@ -6,7 +6,7 @@ class BeverageBase < ProductBase
   end
 
   def tax
-    15.0
+    1500
   end
 
   def description

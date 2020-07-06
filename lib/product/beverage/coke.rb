@@ -6,7 +6,7 @@ class Coke < BeverageBase
   end
 
   def price
-    3.0
+    300
   end
 
   def description

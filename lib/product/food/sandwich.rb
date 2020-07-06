@@ -6,7 +6,7 @@ class Sandwich < FoodBase
   end
 
   def price
-    5.0
+    500
   end
 
   def description

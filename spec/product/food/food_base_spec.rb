@@ -5,8 +5,8 @@ describe FoodBase do
     @base = described_class.new
   end
 
-  it 'tax is 10' do
-    expect(@base.tax).to eq(10)
+  it 'tax is 1000' do
+    expect(@base.tax).to eq(1000)
   end
 
   it 'descriptions is Panino' do

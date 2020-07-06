@@ -6,7 +6,7 @@ class Hamburger < FoodBase
   end
 
   def price
-    10.0
+    1000
   end
 
   def description
