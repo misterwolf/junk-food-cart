@@ -4,7 +4,7 @@
 
 `$ bundle install`
 
-### run examples here wrote
+### run examples
 
 `$ ruby example_carts.rb`
 
