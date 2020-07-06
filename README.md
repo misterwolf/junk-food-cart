@@ -57,7 +57,9 @@ Cestino #numero
 ————————————————————————————————————————————————————
 
 Totale (senza iva): #totale_senza_iva
+
 Iva applicata: #totale_iva
+
 Totale (iva inclusa): #totale_senza_iva
 
 ————————————————————————————————————————————————————
