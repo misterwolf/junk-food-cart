@@ -11,29 +11,29 @@
 
 `$ ruby example_carts.rb`
 
-> _Cestino 1_
+_Cestino 1_
 
-> - **1** Hamburger
+- **1** Hamburger
 
-> - **4** CocaCola
+- **4** CocaCola
 
-> - **3** Tramezzini
+- **3** Tramezzini
 
-> _Cestino 2_
+_Cestino 2_
 
-> - **12** Hamburger
+- **12** Hamburger
 
-> _Cestino 3_
+_Cestino 3_
 
-> - **2** CocaCola
+- **2** CocaCola
 
-> - **1** Hamburger
+- **1** Hamburger
 
-> _Cestino 4_
+_Cestino 4_
 
-> - **1** Coca Cola
+- **1** Coca Cola
 
-> - **1** hamburger
+- **1** hamburger
 
 ### run Specs
 
