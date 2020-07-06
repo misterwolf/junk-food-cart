@@ -70,9 +70,9 @@ describe CartDecorator do
       )
     end
 
-    context 'total_cost_tax_free > EVALUATE_TAX_AT' do
+    context 'total_cost_tax_free > FREE_TAX_THRESHOLD' do
       it 'returns all costs without tax evaluation' do
-        allow(subject).to receive(:total_cost_tax_free).and_return(CartDecorator::EVALUATE_TAX_AT + 1)
+        allow(subject).to receive(:total_cost_tax_free).and_return(CartDecorator::FREE_TAX_THRESHOLD + 1)
 
         expect(subject.evaluate_total_costs).to eq([
           subject.total_cost_tax_free,
@@ -122,7 +122,7 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 1 |  10.0€ | 10.0€ | 1.0€ | 11.0€
+      1 | Panino - Hamburger | 1 | 10.0€ | 10.0€ | 1.0€ | 11.0€
 
       ————————————————————————————————————————————————————
       Totale (senza iva): 10.0€
@@ -141,7 +141,7 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 2 |  10.0€ | 20.0€ | 2.0€ | 22.0€
+      1 | Panino - Hamburger | 2 | 10.0€ | 20.0€ | 2.0€ | 22.0€
 
       ————————————————————————————————————————————————————
       Totale (senza iva): 20.0€
@@ -161,8 +161,8 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 1 |  10.0€ | 10.0€ | 1.0€ | 11.0€
-      2 | Panino - Tramezzino | 1 |  5.0€ | 5.0€ | 0.5€ | 5.5€
+      1 | Panino - Hamburger | 1 | 10.0€ | 10.0€ | 1.0€ | 11.0€
+      2 | Panino - Tramezzino | 1 | 5.0€ | 5.0€ | 0.5€ | 5.5€
 
       ————————————————————————————————————————————————————
       Totale (senza iva): 15.0€
