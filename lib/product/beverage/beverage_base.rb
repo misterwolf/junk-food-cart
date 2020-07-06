@@ -5,7 +5,7 @@ require_relative '../product_base'
 class BeverageBase < ProductBase
   # Tax applied to Product category
   def tax
-    1500
+    BigDecimal('15.0')
   end
 
   # Description of this specific Product category

@@ -122,12 +122,12 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 1 | 10.0€ | 10.0€ | 1.0€ | 11.0€
+      1 | Panino - Hamburger | 1 | 10.00€ | 10.00€ | 1.00€ | 11.00€
 
       ————————————————————————————————————————————————————
-      Totale (senza iva): 10.0€
-      Iva applicata: 1.0€
-      Totale (iva inclusa): 11.0€
+      Totale (senza iva): 10.00€
+      Iva applicata: 1.00€
+      Totale (iva inclusa): 11.00€
       ————————————————————————————————————————————————————
       HERE
 
@@ -141,12 +141,12 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 2 | 10.0€ | 20.0€ | 2.0€ | 22.0€
+      1 | Panino - Hamburger | 2 | 10.00€ | 20.00€ | 2.00€ | 22.00€
 
       ————————————————————————————————————————————————————
-      Totale (senza iva): 20.0€
-      Iva applicata: 2.0€
-      Totale (iva inclusa): 22.0€
+      Totale (senza iva): 20.00€
+      Iva applicata: 2.00€
+      Totale (iva inclusa): 22.00€
       ————————————————————————————————————————————————————
       HERE
 
@@ -161,13 +161,13 @@ describe CartDecorator do
       ————————————————————————————————————————————————————
       Cestino #{@cart.progressive}
       ————————————————————————————————————————————————————
-      1 | Panino - Hamburger | 1 | 10.0€ | 10.0€ | 1.0€ | 11.0€
-      2 | Panino - Tramezzino | 1 | 5.0€ | 5.0€ | 0.5€ | 5.5€
+      1 | Panino - Hamburger | 1 | 10.00€ | 10.00€ | 1.00€ | 11.00€
+      2 | Panino - Tramezzino | 1 | 5.00€ | 5.00€ | 0.50€ | 5.50€
 
       ————————————————————————————————————————————————————
-      Totale (senza iva): 15.0€
-      Iva applicata: 1.5€
-      Totale (iva inclusa): 16.5€
+      Totale (senza iva): 15.00€
+      Iva applicata: 1.50€
+      Totale (iva inclusa): 16.50€
       ————————————————————————————————————————————————————
       HERE
 

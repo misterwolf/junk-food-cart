@@ -1,5 +1,4 @@
-
-require './lib/product/product_base'  #=> add this
+require './lib/product/product_base'
 
 describe ProductBase do
   it { is_expected.to respond_to(:full_price) }

@@ -1,4 +1,4 @@
-require './lib/product/beverage/beverage_base'  #=> add this
+require './lib/product/beverage/beverage_base'
 
 describe BeverageBase do
   it { expect(described_class).to be < ProductBase }
@@ -7,8 +7,8 @@ describe BeverageBase do
     @base = described_class.new
   end
 
-  it 'tax is 1500' do
-    expect(@base.tax).to eq(1500)
+  it 'tax is 15.0' do
+    expect(@base.tax).to eq(15.0)
   end
 
   it 'descriptions is Bibita' do

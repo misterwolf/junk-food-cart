@@ -10,7 +10,7 @@ class Coke < BeverageBase
 
   # Specific price of the product
   def price
-    300
+    BigDecimal('3.0')
   end
 
   # Description, using also the parent description.

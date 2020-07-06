@@ -7,8 +7,8 @@ describe Coke do
     @base = described_class.new
   end
 
-  it 'price is 300' do
-    expect(@base.price).to eq(300)
+  it 'price is 3.0' do
+    expect(@base.price).to eq(3.0)
   end
 
   it 'descriptions is Bibita' do

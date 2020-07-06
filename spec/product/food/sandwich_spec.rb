@@ -7,8 +7,8 @@ describe Sandwich do
     @base = described_class.new
   end
 
-  it 'price is 500' do
-    expect(@base.price).to eq(500)
+  it 'price is 5.0' do
+    expect(@base.price).to eq(5.0)
   end
 
   # ofc, we need to introduce some translations.

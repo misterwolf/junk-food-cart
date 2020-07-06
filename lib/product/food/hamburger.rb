@@ -10,7 +10,7 @@ class Hamburger < FoodBase
 
   # Specific price of the product
   def price
-    1000
+    BigDecimal('10.0')
   end
 
   # Description, using also the parent description.

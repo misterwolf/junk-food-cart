@@ -2,7 +2,6 @@ require './lib/cart'
 require './lib/product/food/hamburger'
 
 describe Cart do
-
   describe '.count' do
     before do
       Cart.new
