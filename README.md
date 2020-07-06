@@ -48,7 +48,7 @@ Totale (iva inclusa): #totale_senza_iva
 
 Esempi:
 
-Cestino 1:
+_Cestino 1_
 
 1 Hamburger
 
@@ -56,17 +56,20 @@ Cestino 1:
 
 3 Tramezzini
 
-Cestino 2:
+
+_Cestino 2_
 
 12 Hamburger
 
-Cestino 3:
+
+_Cestino 3_
 
 2 CocaCola
 
 1 Hamburger
 
-Cestino 4:
+
+_Cestino 4_
 
 1 Coca Cola
 
