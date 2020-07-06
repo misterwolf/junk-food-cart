@@ -15,6 +15,15 @@
 
 `$ rspec spec/`
 
+### Questions
+
+- in receipt recap, should we remove the TAX entries ("Iva applicata" and "Totale (iva inclusa)"") when not applied?
+- it's normal add two decimal place for floating currency Number
+  - should we instead need change this?
+
+- decimal place
+  - should we remove them when number is integer?
+  - should we remove them when number is 0?
 
 ### Excercise
 
@@ -29,7 +38,7 @@ Prezzi:
 
 1 CocaCola: 3 euro
 
-1 Tramezzini: 5 euro
+1 Tramezzino: 5 euro
 
 
 
@@ -48,8 +57,7 @@ Iva applicata: #totale_iva
 Totale (iva inclusa): #totale_senza_iva
 ————————————————————————————————————————————————————
 
-
-Esempi:
+### Visual Examples
 
 ====================================================
 
