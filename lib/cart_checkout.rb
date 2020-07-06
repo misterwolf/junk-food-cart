@@ -1,9 +1,8 @@
-require 'delegate'
-require_relative '../utils'
-require_relative '../string_utils'
-require_relative '../bigdecimal_utils'
+require_relative './utils'
+require_relative './string_utils'
+require_relative './bigdecimal_utils'
 
-class CartDecorator < SimpleDelegator
+class CartCheckout
   include Utils
   using StringUtils
   using BigDecimalUtils

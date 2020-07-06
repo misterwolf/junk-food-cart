@@ -8,7 +8,7 @@ describe Cart do
     end
 
     it 'counts all instances' do
-      expect(Cart.count).to eq(1)
+      expect(Cart.instance_variable_get(:@how_many_carts)).to eq(Cart.count)
     end
   end
 

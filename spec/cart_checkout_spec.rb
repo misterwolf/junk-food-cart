@@ -1,10 +1,10 @@
-require './lib/decorator/cart_decorator'
+require './lib/cart_checkout'
 require './lib/cart'
 require './lib/product/beverage/coke'
 require './lib/product/food/hamburger'
 require './lib/product/food/sandwich'
 
-describe CartDecorator do
+describe CartCheckout do
   before do
     @hamburger = Hamburger.new
     @coke = Coke.new
@@ -12,7 +12,7 @@ describe CartDecorator do
     @cart = Cart.new
   end
 
-  subject { CartDecorator.new(@cart) }
+  subject { CartCheckout.new(@cart) }
 
   describe '#total_cost_tax_free' do
     context '1 item' do
@@ -72,7 +72,7 @@ describe CartDecorator do
 
     context 'total_cost_tax_free > FREE_TAX_THRESHOLD' do
       it 'returns all costs without tax evaluation' do
-        allow(subject).to receive(:total_cost_tax_free).and_return(CartDecorator::FREE_TAX_THRESHOLD + 1)
+        allow(subject).to receive(:total_cost_tax_free).and_return(CartCheckout::FREE_TAX_THRESHOLD + 1)
 
         expect(subject.evaluate_total_costs).to eq([
           subject.total_cost_tax_free,
