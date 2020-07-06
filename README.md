@@ -17,7 +17,7 @@
 
 ### Questions
 
-- in receipt recap, should we remove the TAX entries ("Iva applicata" and "Totale (iva inclusa)"") when not applied?
+- in receipt recap, should we remove the TAX entries ("Iva applicata" and "Totale (iva inclusa)") when not applied?
 - it's normal add two decimal place for floating currency Number
   - should we instead need change this?
 
